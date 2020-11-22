@@ -3,9 +3,9 @@ const router = new express.Router();
 const bcrypt = require('bcryptjs');
 const multer = require('multer');
 const sharp = require('sharp');
-const auth = require('../../middleware/auth');
-const User = require('../models/users');
-const { sendWelcomeEmail, accountClosingEmail } = require('../../email/account');
+const auth = require('../middleware/auth');
+const User = require('../db/models/users');
+const { sendWelcomeEmail, accountClosingEmail } = require('../email/account');
 
 const upload = multer({
     // only used to save file to the specified folder; if not written file is passed to the next function
