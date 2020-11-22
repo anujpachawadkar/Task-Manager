@@ -1,7 +1,7 @@
 const express = require('express');
-const router = new express.Router()
-const Task = require('../models/tasks');
-const auth = require('../../middleware/auth');
+const router = new express.Router();
+const Task = require('../db/models/tasks');
+const auth = require('../middleware/auth');
 
 // This is called router middleware function
 router.post('/task', auth, async (req, res) => {
