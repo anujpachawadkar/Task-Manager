@@ -1,7 +1,7 @@
 const express = require('express');
 const app = express();
-const taskRoutes = require('./db/routers/tasks');
-const userRoutes = require('./db/routers/users');
+const taskRoutes = require('./routers/tasks');
+const userRoutes = require('./routers/users');
 
 // Making DB connection
 // It is going to execute function returned from 'mongoose.js'
