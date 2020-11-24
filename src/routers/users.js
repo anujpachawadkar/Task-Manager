@@ -1,6 +1,5 @@
 const express = require('express');
 const router = new express.Router();
-const bcrypt = require('bcryptjs');
 const multer = require('multer');
 const sharp = require('sharp');
 const auth = require('../middleware/auth');
